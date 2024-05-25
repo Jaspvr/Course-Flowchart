@@ -1,0 +1,25 @@
+{
+    "name": "Root",
+    "children": [
+      {
+        "name": "CSC111",
+        "children": [
+          { "name": "CSC115", "children": [] },
+          { "name": "CSC116", "children": [] }
+        ]
+      },
+      {
+        "name": "MATH100",
+        "children": [
+          { "name": "MATH101", "children": [] }
+        ]
+      },
+      {
+        "name": "PHYS110",
+        "children": [
+          { "name": "PHYS111", "children": [] }
+        ]
+      }
+    ]
+  }
+  
