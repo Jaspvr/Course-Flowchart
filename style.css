@@ -57,3 +57,7 @@ body {
 .fixed-component input[type="checkbox"] {
     margin-right: 10px;
 }
+
+.arrowhead{
+    fill:#666
+}

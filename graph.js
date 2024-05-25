@@ -189,8 +189,8 @@ const data = {
 };
 
 
-const width = 960;
-const height = 600;
+const width = window.innerWidth;
+const height = window.innerHeight;
 
 const svg = d3.select("body").append("svg")
     .attr("width", width)
@@ -201,10 +201,23 @@ const svg = d3.select("body").append("svg")
     .append("g")
     .attr("transform", "translate(50,50)");
 
+    svg.append("defs").append("marker")
+    .attr("id", "arrowhead")
+    .attr("viewBox", "0 0 10 10")
+    .attr("refX", 15) // Position the arrowhead at the end of the line
+    .attr("refY", 5)
+    .attr("markerWidth", 6)
+    .attr("markerHeight", 6)
+    .attr("orient", "auto")
+    .append("path")
+    .attr("d", "M 0 0 L 10 5 L 0 10 Z") // Arrowhead path
+    .attr("class", "arrowhead");
+
 const link = svg.selectAll(".link")
     .data(data.links)
     .enter().append("line")
-    .attr("class", "link");
+    .attr("class", "link")
+    .attr("marker-end", "url(#arrowhead)");
 
 const node = svg.selectAll(".node")
     .data(data.nodes)
