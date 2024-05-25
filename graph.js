@@ -2,40 +2,44 @@
 const data = {
     nodes: [
         { id: "Software Engineering" },
-        { id: "MATH100" },
-        { id: "MATH101" },
-        { id: "MATH200" },
+
+        //1A
+        { id: "MATH100/MATH109" },
         { id: "PHYS110" },
         { id: "PHYS111" },
         { id: "MATH110" },
-        { id: "MATH109" },
         { id: "CSC111" },
-        { id: "CSC115" },
-        { id: "CSC116" },
+        { id: "ENGR130" },
+
+        //1B
+        { id: "MATH101" },
+        { id: "CSC115/CSC116" },
         { id: "ENGR110" },
         { id: "ENGR120" },
-        { id: "ENGR130" },
+        { id: "NATSCI" },
+
         { id: "CO-OP 1" }
     ],
 
     links: [
-        { source: "Software Engineering", target: "MATH100" },
-        { source: "MATH100", target: "MATH101" },
-        { source: "MATH101", target: "MATH200" },
+        { source: "Software Engineering", target: "MATH100/MATH109" },
         { source: "Software Engineering", target: "PHYS110" },
-        { source: "PHYS110", target: "PHYS111" },
         { source: "Software Engineering", target: "MATH110" },
-        { source: "MATH110", target: "PHYS111" }, // Shared child
-        { source: "Software Engineering", target: "MATH109" },
         { source: "Software Engineering", target: "CSC111" },
-        { source: "CSC111", target: "CSC115" },
-        { source: "CSC111", target: "CSC116" },
         { source: "Software Engineering", target: "ENGR110" },
-        { source: "ENGR110", target: "ENGR120" },
         { source: "Software Engineering", target: "ENGR130" },
-        { source: "ENGR130", target: "CO-OP 1" }
+
+
+        { source: "ENGR130", target: "CO-OP 1" },
+        { source: "MATH100/MATH109", target: "MATH101" },
+        { source: "CSC111", target: "CSC115/CSC116" },
+        { source: "ENGR110", target: "ENGR120" },
+
+
+
     ]
 };
+
 
 const width = 960;
 const height = 600;
