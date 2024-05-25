@@ -3,7 +3,10 @@ body {
     color: #ddd;
     font-family: Arial, sans-serif;
     overflow: hidden;
+    font-size: 14px;
 }
+
+
 .title {
     color: #ddd;
     text-align: center;
@@ -30,6 +33,11 @@ body {
     stroke-width: 1.5px;
 }
 
+.link.highlighted {
+    stroke: #1eff00;
+    stroke-width: 2px;
+}
+
 .fixed-component {
     position: fixed;
     top: 10px;
@@ -38,7 +46,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    max-height: 30px; /* Initial height */
+    max-height: 20px; /* Initial height */
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
 }

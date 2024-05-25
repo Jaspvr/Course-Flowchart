@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 .filter(cb => cb.checked)
                 .map(cb => cb.id);
             console.log('Checked courses:', checkedCourses);
+            checkedCourses.push("Software Engineering")
             updateHighlighting(checkedCourses);
             updateElectives(checkedCourses);
         });
@@ -63,5 +64,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     function updateHighlighting(checkedCourses) {
         node.classed('selected', d => checkedCourses.includes(d.id));
+        link.classed('highlighted', d => checkedCourses.includes(d.source.id) && checkedCourses.includes(d.target.id));
     }
 });
