@@ -5,20 +5,90 @@ const data = {
 
         //1A
         { id: "MATH100/MATH109" },
+        { id: "MATH101" },
         { id: "PHYS110" },
-        { id: "PHYS111" },
         { id: "MATH110" },
         { id: "CSC111" },
-        { id: "ENGR130" },
 
         //1B
-        { id: "MATH101" },
+
         { id: "CSC115/CSC116" },
         { id: "ENGR110" },
         { id: "ENGR120" },
-        { id: "NATSCI" },
+        { id: "ENGR130" },
+        { id: "CO-OP 1" },
 
-        { id: "CO-OP 1" }
+
+        //2A
+        { id: "ECE255" },
+        { id: "CSC230" },
+        { id: "ECE260" },
+        { id: "MATH122" },
+        { id: "SENG265" },
+        { id: "STAT260" },
+
+        // { id: "Comp Studies Elec 1" },
+        // { id: "Comp Studies Elec 2" },
+
+        //Co-op
+        { id: "ENGR002" },
+
+        //2B Summer
+        { id: "CSC225" },
+        { id: "ECON180" },
+        { id: "ECE310" },
+        { id: "SENG275" },
+        { id: "SENG310" },
+
+
+        //Co-op
+        { id: "ENGR003" },
+
+        //3A Spring
+        { id: "ECE363" },
+        { id: "CSC361" },
+        { id: "CSC226"},
+        { id: "ECE360"},
+        { id: "SENG321"},
+        { id: "SENG371"},
+
+        // { id: "Nat Sci Elec 1"},
+        // { id: "Nat Sci Elec 2"},
+        // { id: "Nat Sci Elec 3"},
+
+        //Co-op
+        { id: "ENGR004" },
+
+        //3B Fall
+        { id: "ECE355"},
+        { id: "CSC355"},
+        { id: "CSC320"},
+        {id: "CSC360"},
+        {id: "CSC370"},
+        {id: "SENG350"},
+        {id: "SENG360"},
+
+
+        //4A Summer
+        {id: "SENG426"},
+        {id: "SENG440"},
+        {id: "SENG499"},
+
+        // {id: "Tech Elec 1"},
+        // {id: "Tech Elec 2"},
+        // {id: "Tech Elec 3"},
+        // {id: "Tech Elec 4"},
+        // {id: "Tech Elec 5"},
+
+
+        //4B Spring
+        {id: "ECE455"},
+        {id: "CSC460"},
+        {id: "SENG401"},
+
+
+
+
     ],
 
     links: [
@@ -32,13 +102,89 @@ const data = {
 
         { source: "ENGR130", target: "CO-OP 1" },
         { source: "MATH100/MATH109", target: "MATH101" },
-        { source: "CSC111", target: "CSC115/CSC116" },
+        { source: "CSC111", target: "CSC115/CSC116"},
         { source: "ENGR110", target: "ENGR120" },
 
-        
+        { source: "CSC111", target: "ECE255" },
+        { source: "CSC115/CSC116", target: "CSC230" },
+        { source: "MATH101", target: "STAT260" },
+        { source: "MATH101", target: "ECE260" },
+        { source: "MATH110", target: "ECE260" },
+        { source: "MATH100/MATH109", target: "MATH122" },
+        { source: "CSC115/CSC116", target: "SENG265" },
+
+
+        //2B
+        { source: "CSC115/CSC116", target: "CSC225" },
+        { source: "MATH122", target: "CSC225" },
+        { source: "MATH101", target: "ECON180" },
+        { source: "ECE260", target: "ECE310" },
+        { source: "SENG265", target: "SENG275" },
+        { source: "SENG265", target: "SENG310" },
+
+
+        //3A
+        { source: "ECE255", target: "ECE363" },
+        { source: "CSC230", target: "ECE363" },
+        { source: "CSC230", target: "CSC361" },
+        { source: "ECE255", target: "CSC361" },
+        { source: "SENG265", target: "CSC361" },
+        { source: "CSC226", target: "CSC361" },
+        { source: "CSC225", target: "CSC226" },
+        { source: "STAT260", target: "CSC226" },
+        { source: "ECE260", target: "ECE360" },
+        { source: "SENG265", target: "SENG321" },
+        { source: "SENG275", target: "SENG371" },
+
+        //3B
+        { source: "MATH122", target: "ECE355" },
+        { source: "ECE255", target: "ECE355" },
+        { source: "CSC230", target: "ECE355" },
+        { source: "CSC230", target: "CSC355" },
+        { source: "ECE255", target: "CSC355" },
+        { source: "MATH122", target: "CSC355" },
+        { source: "CSC226", target: "CSC320" },
+        { source: "CSC225", target: "CSC360" },
+        { source: "SENG265", target: "CSC360" },
+        { source: "CSC230", target: "CSC360" },
+        { source: "ECE255", target: "CSC360" },
+        { source: "CSC225", target: "CSC370" },
+        { source: "SENG265", target: "CSC370" },
+        { source: "SENG275", target: "SENG350" },
+        { source: "SENG265", target: "SENG360" },
+        { source: "CSC370", target: "SENG360" },
+        { source: "CSC361", target: "SENG360" },
+        { source: "ECE363", target: "SENG360" },
+
+
+        //4A
+        { source: "SENG321", target: "SENG426" },
+        { source: "SENG371", target: "SENG426" },
+        { source: "SENG275", target: "SENG426" },
+        { source: "CSC355", target: "SENG440" },
+        { source: "ECE355", target: "SENG440" },
+        { source: "SENG350", target: "SENG499" },
+        { source: "CSC361", target: "SENG499" },
+        { source: "ECE363", target: "SENG499" },
+        { source: "CSC370", target: "SENG499" },
+        { source: "SENG321", target: "SENG499" },
+        { source: "ENGR002", target: "SENG499" },
+
+
+        //4B
+        { source: "ECE355", target: "ECE455" },
+        { source: "CSC355", target: "ECE455" },
+        { source: "CSC355", target: "CSC460" },
+        { source: "ECE355", target: "CSC460" },
+        { source: "CSC360", target: "CSC460" },
+        { source: "Software Engineering", target: "SENG401" },
 
 
 
+        //COOP
+         { source: "CO-OP 1", target: "ENGR002" },
+         { source: "ENGR002", target: "ENGR003" },
+         { source: "ENGR003", target: "ENGR004" }
     ]
 };
 
