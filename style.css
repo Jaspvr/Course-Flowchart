@@ -58,6 +58,21 @@ body {
     margin-right: 10px;
 }
 
+.fixed-component#electiveSelector {
+    left: 10px;
+    right: auto;
+    color: #888; /* Disabled color */
+}
+.fixed-component#electiveSelector .enabled {
+    color: #fff; /* Enabled color */
+}
+.fixed-component#electiveSelector .disabled {
+    color: #888; /* Disabled color */
+}
+.fixed-component#electiveSelector .disabled input[type="checkbox"] {
+    pointer-events: none; /* Disable interaction */
+}
+
 .arrowhead{
     fill:#666
 }

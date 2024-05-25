@@ -27,9 +27,6 @@ const data = {
         { id: "SENG265" },
         { id: "STAT260" },
 
-        // { id: "Comp Studies Elec 1" },
-        // { id: "Comp Studies Elec 2" },
-
         //Co-op
         { id: "ENGR002" },
 
@@ -52,9 +49,6 @@ const data = {
         { id: "SENG321"},
         { id: "SENG371"},
 
-        // { id: "Nat Sci Elec 1"},
-        // { id: "Nat Sci Elec 2"},
-        // { id: "Nat Sci Elec 3"},
 
         //Co-op
         { id: "ENGR004" },
@@ -74,6 +68,21 @@ const data = {
         {id: "SENG440"},
         {id: "SENG499"},
 
+
+        //4B Spring
+        {id: "ECE455"},
+        {id: "CSC460"},
+        {id: "SENG401"},
+        
+
+        // electives
+        // { id: "Comp Studies Elec 1" },
+        // { id: "Comp Studies Elec 2" },
+
+        // { id: "Nat Sci Elec 1"},
+        // { id: "Nat Sci Elec 2"},
+        // { id: "Nat Sci Elec 3"},
+
         // {id: "Tech Elec 1"},
         // {id: "Tech Elec 2"},
         // {id: "Tech Elec 3"},
@@ -81,10 +90,6 @@ const data = {
         // {id: "Tech Elec 5"},
 
 
-        //4B Spring
-        {id: "ECE455"},
-        {id: "CSC460"},
-        {id: "SENG401"},
 
 
 
