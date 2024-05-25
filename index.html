@@ -2,22 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Engineering Courses Tree</title>
+    <title>Engineering Courses Graph</title>
 
     <!-- node styles -->
-    <link rel="stylesheet" href="nodeStyle.css">
+    <!-- <link rel="stylesheet" href="nodeStyle.css"> -->
 
     <style>
         body {
-            background-color: #f0f0f0;
-            margin: 0;
-            font-family: 'Times New Roman', Times, serif;
+            background-color: #333;
+            color: #ddd;
+        }
+        .title {
+            color: blue;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .node circle {
+            fill: #444;
+            stroke: #999;
+            stroke-width: 3px;
+        }
+        .node text { 
+            font: 12px sans-serif; 
+            fill: #ddd;
+        }
+        .link {
+            fill: none;
+            stroke: #666;
+            stroke-width: 2px;
+        }
+        .vertical-link {
+            fill: none;
+            stroke: #666;
+            stroke-width: 2px;
+            /* stroke-dasharray: 5, 5; Dotted line */
         }
     </style>
 </head>
 <body>
+    <h1 class="title">Engineering Courses Graph</h1>
     <!-- Use the D3.js library -->
     <script src="https://d3js.org/d3.v6.min.js"></script>
-    <script src="script.js"></script>
+    <script src="graph.js"></script>
 </body>
 </html>
