@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 .map(cb => cb.id);
             console.log('Checked courses:', checkedCourses);
             // need to add code to highlights
+            updateHighlighting(checkedCourses);
         });
     });
 });
+function updateHighlighting(checkedCourses) {
+    node.classed('selected', d => checkedCourses.includes(d.id));
+}
