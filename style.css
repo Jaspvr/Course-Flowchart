@@ -1,0 +1,55 @@
+body {
+    background-color: #333;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+.title {
+    color: #ddd;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.node circle {
+    fill: #1f77b4;
+    stroke: #999;
+    stroke-width: 2px;
+}
+.node text { 
+    font-size: 12px;
+    fill: #ddd;
+    pointer-events: none; /* Disable mouse events on text */
+}
+.link {
+    fill: none;
+    stroke: #666;
+    stroke-width: 1.5px;
+}
+
+.fixed-component {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-height: 50px; /* Initial height */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+.fixed-component.expanded {
+    max-height: 90vh; /* Expanded height */
+    overflow-y: auto;
+}
+.fixed-component h2 {
+    margin-top: 0;
+    color: #fff;
+}
+.fixed-component label {
+    display: block;
+    margin-bottom: 10px;
+}
+.fixed-component input[type="checkbox"] {
+    margin-right: 10px;
+}

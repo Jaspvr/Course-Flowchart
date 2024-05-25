@@ -5,42 +5,34 @@
     <title>Engineering Courses Graph</title>
 
     <!-- node styles -->
-    <!-- <link rel="stylesheet" href="nodeStyle.css"> -->
-
-    <style>
-        body {
-            background-color: #333;
-            color: #ddd;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-        }
-        .title {
-            color: #ddd;
-            text-align: center;
-            font-size: 24px;
-            margin-top: 20px;
-        }
-        .node circle {
-            fill: #1f77b4;
-            stroke: #999;
-            stroke-width: 2px;
-        }
-        .node text { 
-            font-size: 12px;
-            fill: #ddd;
-            pointer-events: none; /* Disable mouse events on text */
-        }
-        .link {
-            fill: none;
-            stroke: #666;
-            stroke-width: 1.5px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 class="title">Engineering Courses Graph</h1>
+    <div class="fixed-component" id="courseSelector">
+        <h2>Select Completed Courses</h2>
+        <label><input type="checkbox" id="CSC111"> CSC111</label>
+        <label><input type="checkbox" id="ENGR110"> ENGR110</label>
+        <label><input type="checkbox" id="ENGR130"> ENGR130</label>
+        <label><input type="checkbox" id="MATH100/MATH109"> MATH100/MATH109</label>
+        <label><input type="checkbox" id="MATH110"> MATH110</label>
+        <label><input type="checkbox" id="PHYS110"> PHYS110</label>
+        <label><input type="checkbox" id="CSC115/CSC116"> CSC115/CSC116</label>
+        <label><input type="checkbox" id="ENGR120"> ENGR120</label>
+        <label><input type="checkbox" id="MATH101"> MATH101</label>
+        <label><input type="checkbox" id="CHEM101/CHEM150"> CHEM101/CHEM150</label>
+        <label><input type="checkbox" id="Natural Sciences Elective"> Natural Sciences Elective</label>
+        <label><input type="checkbox" id="CO-OP"> CO-OP</label>
+        <label><input type="checkbox" id="ECE255/CSC230"> ECE255/CSC230</label>
+        <label><input type="checkbox" id="ECE260"> ECE260</label>
+        <label><input type="checkbox" id="MATH122"> MATH122</label>
+        <label><input type="checkbox" id="SENG265"> SENG265</label>
+        <label><input type="checkbox" id="STAT260"> STAT260</label>
+        <label><input type="checkbox" id="Complementary Studies Elective"> Complementary Studies Elective</label>
+    </div>
     <!-- Use the D3.js library -->
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="graph.js"></script>
+    <script src="checkbox.js"></script>
 </body>
 </html>
