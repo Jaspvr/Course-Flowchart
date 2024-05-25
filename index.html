@@ -11,32 +11,29 @@
         body {
             background-color: #333;
             color: #ddd;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
         }
         .title {
-            color: blue;
+            color: #ddd;
             text-align: center;
             font-size: 24px;
             margin-top: 20px;
         }
         .node circle {
-            fill: #444;
+            fill: #1f77b4;
             stroke: #999;
-            stroke-width: 3px;
+            stroke-width: 2px;
         }
         .node text { 
-            font: 12px sans-serif; 
+            font-size: 12px;
             fill: #ddd;
+            pointer-events: none; /* Disable mouse events on text */
         }
         .link {
             fill: none;
             stroke: #666;
-            stroke-width: 2px;
-        }
-        .vertical-link {
-            fill: none;
-            stroke: #666;
-            stroke-width: 2px;
-            /* stroke-dasharray: 5, 5; Dotted line */
+            stroke-width: 1.5px;
         }
     </style>
 </head>
