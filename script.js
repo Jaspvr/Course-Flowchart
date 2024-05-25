@@ -1,6 +1,6 @@
 // Some courses (to test)
 const data = {
-    name: "Engineering",
+    name: "Software Engineering",
     children: [
         {
             name: "MATH100",
@@ -17,6 +17,37 @@ const data = {
             name: "PHYS110",
             children: [
                 { name: "PHYS111" },
+            ]
+        },
+        {
+            name: "MATH110",
+            children: [
+                { name: "PHYS111" },
+            ]
+        },
+        {
+            name: "MATH109",
+            children: [
+
+            ]
+        },
+        {
+            name: "CSC111",
+            children: [
+                { name: "CSC115" },
+                { name: "CSC116" }
+            ]
+        },
+        {
+            name: "ENGR110",
+            children: [
+                { name: "ENGR120" },
+            ]
+        },
+        {
+            name: "ENGR130",
+            children: [
+                { name: "CO-OP 1" },
             ]
         }
     ]
