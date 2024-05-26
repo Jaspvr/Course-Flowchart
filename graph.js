@@ -1,78 +1,150 @@
 // Some courses (to test)
 const data = {
     nodes: [
-        { id: "Software Engineering" },
+
+        { id: "Software Engineering", x: 300, y: -100 },
 
         //1A
-        { id: "MATH100/MATH109" },
-        { id: "MATH101" },
-        { id: "PHYS110" },
-        { id: "MATH110" },
-        { id: "CSC111" },
+        { id: "MATH100/MATH109", x: 150, y: 200 },
+        { id: "MATH101", x: 100, y: 300 },
+        { id: "PHYS110", x: -80, y: 200 },
+        { id: "MATH110", x: 50, y: 200 },
+        { id: "CSC111", x: 700, y: 100 },
 
         //1B
-
-        { id: "CSC115/CSC116" },
-        { id: "ENGR110" },
-        { id: "ENGR120" },
-        { id: "ENGR130" },
-        { id: "CO-OP 1" },
-
+        { id: "CSC115/CSC116", x: 600, y: 160 },
+        { id: "ENGR110", x: -200, y: 120 },
+        { id: "ENGR120", x: -200, y: 200 },
+        { id: "ENGR130", x: 400, y: 0 },
+        //{ id: "CO-OP 1", x: 500, y: 0 },
 
         //2A
-        { id: "ECE255" },
-        { id: "CSC230" },
-        { id: "ECE260" },
-        { id: "MATH122" },
-        { id: "SENG265" },
-        { id: "STAT260" },
+        { id: "ECE255", x: 840, y: 260 },
+        { id: "CSC230", x: 870, y: 320 },
+        { id: "ECE260", x: -160, y: 400 },
+        { id: "MATH122", x: 200, y: 300 },
+        { id: "SENG265", x: 600, y: 260 },
+        { id: "STAT260", x: 150, y: 380 },
+        //{ id: "Complementary Studies Elective", x: 700, y: 400 },
 
         //Co-op
-        { id: "ENGR002" },
+       // { id: "ENGR002", x: 200, y: 0 },
 
         //2B Summer
-        { id: "CSC225" },
-        { id: "ECON180" },
-        { id: "ECE310" },
-        { id: "SENG275" },
-        { id: "SENG310" },
-
+        { id: "CSC225", x: 400, y: 350 },
+        { id: "ECON180", x: -50, y: 400 },
+        { id: "ECE310", x: -350, y: 500 },
+        { id: "SENG275", x: 530, y: 370 },
+        { id: "SENG310", x: 650, y: 300 },
+        //{ id: "Complementary Studies Elective", x: 700, y: 500 },
 
         //Co-op
-        { id: "ENGR003" },
+        //{ id: "ENGR003", x: 300, y: 0 },
 
         //3A Spring
-        { id: "ECE363" },
-        { id: "CSC361" },
-        { id: "CSC226"},
-        { id: "ECE360"},
-        { id: "SENG321"},
-        { id: "SENG371"},
-
+        { id: "ECE363", x: 980, y: 340 },
+        { id: "CSC361", x: 860, y: 410 },
+        { id: "CSC226", x: 370, y: 410 },
+        { id: "ECE360", x: -300, y: 600 },
+        { id: "SENG321", x: 600, y: 600 },
+        { id: "SENG371", x: 500, y: 460 },
+        //{ id: "Natural Science Elective", x: 800, y: 600 },
 
         //Co-op
-        { id: "ENGR004" },
+        //{ id: "ENGR004", x: 400, y: 0 },
 
         //3B Fall
-        { id: "ECE355"},
-        { id: "CSC355"},
-        { id: "CSC320"},
-        {id: "CSC360"},
-        {id: "CSC370"},
-        {id: "SENG350"},
-        {id: "SENG360"},
-
+        { id: "ECE355", x: 700, y: 600 },
+        { id: "CSC355", x: 300, y: 700 },
+        { id: "CSC320", x: 365, y: 480 },
+        { id: "CSC360", x: 520, y: 590 },
+        { id: "CSC370", x: 600, y: 700 },
+        { id: "SENG350", x: 400, y: 580 },
+        { id: "SENG360", x: 900, y: 700 },
 
         //4A Summer
-        {id: "SENG426"},
-        {id: "SENG440"},
-        {id: "SENG499"},
-
+        { id: "SENG426", x: 180, y: 60 },
+        { id: "SENG440", x: 300, y: 800 },
+        { id: "SENG499", x: 730, y: 800 },
+        //{ id: "Technical Elective", x: 500, y: 800 },
+        //{ id: "Technical Elective", x: 600, y: 800 },
 
         //4B Spring
-        {id: "ECE455"},
-        {id: "CSC460"},
-        {id: "SENG401"},
+        { id: "ECE455", x: 200, y: 900 },
+        { id: "CSC460", x: 300, y: 900 },
+        { id: "SENG401", x: 400, y: 900 },
+        // { id: "Software Engineering" },
+
+        // //1A
+        // { id: "MATH100/MATH109" },
+        // { id: "MATH101" },
+        // { id: "PHYS110" },
+        // { id: "MATH110" },
+        // { id: "CSC111" },
+
+        // //1B
+
+        // { id: "CSC115/CSC116" },
+        // { id: "ENGR110" },
+        // { id: "ENGR120" },
+        // { id: "ENGR130" },
+        // { id: "CO-OP 1" },
+
+
+        // //2A
+        // { id: "ECE255" },
+        // { id: "CSC230" },
+        // { id: "ECE260" },
+        // { id: "MATH122" },
+        // { id: "SENG265" },
+        // { id: "STAT260" },
+
+        // //Co-op
+        // { id: "ENGR002" },
+
+        // //2B Summer
+        // { id: "CSC225" },
+        // { id: "ECON180" },
+        // { id: "ECE310" },
+        // { id: "SENG275" },
+        // { id: "SENG310" },
+
+
+        // //Co-op
+        // { id: "ENGR003" },
+
+        // //3A Spring
+        // { id: "ECE363" },
+        // { id: "CSC361" },
+        // { id: "CSC226"},
+        // { id: "ECE360"},
+        // { id: "SENG321"},
+        // { id: "SENG371"},
+
+
+        // //Co-op
+        // { id: "ENGR004" },
+
+        // //3B Fall
+        // { id: "ECE355"},
+        // { id: "CSC355"},
+        // { id: "CSC320"},
+        // {id: "CSC360"},
+        // {id: "CSC370"},
+        // {id: "SENG350"},
+        // {id: "SENG360"},
+
+
+        // //4A Summer
+        // {id: "SENG426"},
+        // {id: "SENG440"},
+        // {id: "SENG499"},
+
+
+        // //4B Spring
+        // {id: "ECE455"},
+        // {id: "CSC460"},
+        // {id: "SENG401"},
         
 
         // electives
@@ -105,7 +177,6 @@ const data = {
         { source: "Software Engineering", target: "ENGR130" },
 
 
-        { source: "ENGR130", target: "CO-OP 1" },
         { source: "MATH100/MATH109", target: "MATH101" },
         { source: "CSC111", target: "CSC115/CSC116"},
         { source: "ENGR110", target: "ENGR120" },
@@ -173,7 +244,6 @@ const data = {
         { source: "ECE363", target: "SENG499" },
         { source: "CSC370", target: "SENG499" },
         { source: "SENG321", target: "SENG499" },
-        { source: "ENGR002", target: "SENG499" },
 
 
         //4B
@@ -187,9 +257,6 @@ const data = {
 
 
         //COOP
-         { source: "CO-OP 1", target: "ENGR002" },
-         { source: "ENGR002", target: "ENGR003" },
-         { source: "ENGR003", target: "ENGR004" }
     ]
 };
 
@@ -281,3 +348,10 @@ const simulation = d3.forceSimulation(data.nodes)
 
         node.attr("transform", d => `translate(${d.x},${d.y})`);
     });
+
+
+// Initialize nodes with preset positions
+data.nodes.forEach(node => {
+    node.fx = node.x;
+    node.fy = node.y;
+});
