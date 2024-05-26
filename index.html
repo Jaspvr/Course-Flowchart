@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="title">Engineering Courses Graph</h1>
+    <h1 class="title">Software Engineering Courses Graph</h1>
     <div class="fixed-component" id="courseSelector">
         <h2>Select Completed Courses</h2>
 
@@ -24,7 +24,6 @@
         <label><input type="checkbox" id="ENGR110"> ENGR110</label><br>
         <label><input type="checkbox" id="ENGR120"> ENGR120</label><br>
         <label><input type="checkbox" id="ENGR130"> ENGR130</label><br>
-        <label><input type="checkbox" id="CO-OP 1"> CO-OP 1</label><br>
 
         <!-- 2A -->
         <label><input type="checkbox" id="ECE255"> ECE255</label><br>
@@ -34,9 +33,6 @@
         <label><input type="checkbox" id="SENG265"> SENG265</label><br>
         <label><input type="checkbox" id="STAT260"> STAT260</label><br>
 
-        <!-- Co-op -->
-        <label><input type="checkbox" id="ENGR002"> ENGR002</label><br>
-
         <!-- 2B Summer -->
         <label><input type="checkbox" id="CSC225"> CSC225</label><br>
         <label><input type="checkbox" id="ECON180"> ECON180</label><br>
@@ -44,8 +40,6 @@
         <label><input type="checkbox" id="SENG275"> SENG275</label><br>
         <label><input type="checkbox" id="SENG310"> SENG310</label><br>
 
-        <!-- Co-op -->
-        <label><input type="checkbox" id="ENGR003"> ENGR003</label><br>
 
         <!-- 3A Spring -->
         <label><input type="checkbox" id="ECE363"> ECE363</label><br>
@@ -56,8 +50,6 @@
         <label><input type="checkbox" id="SENG371"> SENG371</label><br>
         <label><input type="checkbox" id="Nat Sci Elec 2"> Nat Sci Elec 2</label><br>
 
-        <!-- Co-op -->
-        <label><input type="checkbox" id="ENGR004"> ENGR004</label><br>
 
         <!-- 3B Fall -->
         <label><input type="checkbox" id="ECE355"> ECE355</label><br>
@@ -91,10 +83,15 @@
         <label><input type="checkbox" id="Tech Elec 4"> Tech Elec 4</label><br>
         <label><input type="checkbox" id="Tech Elec 5"> Tech Elec 5</label><br>
 
+        <label><input type="checkbox" id="Co-op 1"> Co-op 1</label><br>
+        <label><input type="checkbox" id="Co-op 2"> Co-op 2</label><br>
+        <label><input type="checkbox" id="Co-op 3"> Co-op 3</label><br>
+        <label><input type="checkbox" id="Co-op 4"> Co-op 4</label><br>
+
     </div>
     <!-- Electives checklist -->
     <div class="fixed-component" id="electiveSelector">
-        <h2>Elective Courses</h2>
+        <h2>Electives / Co-ops</h2>
         <label class="disabled"><input type="checkbox" id="Nat Sci Elec 1"> Nat Sci Elec 1</label><br>
         <label class="disabled"><input type="checkbox" id="Nat Sci Elec 2"> Nat Sci Elec 2</label><br>
         <label class="disabled"><input type="checkbox" id="Nat Sci Elec 3"> Nat Sci Elec 3</label><br>
@@ -105,6 +102,11 @@
         <label class="disabled"><input type="checkbox" id="Tech Elec 3"> Tech Elec 3</label><br>
         <label class="disabled"><input type="checkbox" id="Tech Elec 4"> Tech Elec 4</label><br>
         <label class="disabled"><input type="checkbox" id="Tech Elec 5"> Tech Elec 5</label><br>
+        <label class="disabled"><input type="checkbox" id="Co-op 1"> Co-op 1</label><br>
+        <label class="disabled"><input type="checkbox" id="Co-op 2"> Co-op 2</label><br>
+        <label class="disabled"><input type="checkbox" id="Co-op 3"> Co-op 3</label><br>
+        <label class="disabled"><input type="checkbox" id="Co-op 4"> Co-op 4</label><br>
+
     </div>
     <!-- Use the D3.js library -->
     <script src="https://d3js.org/d3.v6.min.js"></script>

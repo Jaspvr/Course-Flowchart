@@ -36,15 +36,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     function updateElectives(checkedCourses) {
         const electiveConditions = {
             'Nat Sci Elec 1': ['MATH100/MATH109', 'MATH110'],
-            'Nat Sci Elec 2': ['MATH100/MATH109', 'PHYS110'],
-            'Nat Sci Elec 3': ['MATH101', 'PHYS110'],
+            'Nat Sci Elec 2': ['Nat Sci Elec 1', 'MATH100/MATH109', 'PHYS110'],
+            'Nat Sci Elec 3': ['Nat Sci Elec 2', 'MATH101', 'PHYS110'],
             'Comp Studies Elec 1': ['CSC111', 'ENGR110'],
-            'Comp Studies Elec 2': ['CSC111', 'ENGR120'],
+            'Comp Studies Elec 2': ['Comp Studies Elec 1', 'ENGR120'],
             'Tech Elec 1': ['ECE255', 'CSC230'],
-            'Tech Elec 2': ['ECE255', 'ECE260'],
-            'Tech Elec 3': ['SENG265', 'STAT260'],
-            'Tech Elec 4': ['SENG265', 'ECE260'],
-            'Tech Elec 5': ['CSC230', 'ECE260']
+            'Tech Elec 2': ['Tech Elec 1', 'ECE260'],
+            'Tech Elec 3': ['Tech Elec 2', 'SENG265', 'STAT260'],
+            'Tech Elec 4': ['Tech Elec 3', 'ECE310'],
+            'Tech Elec 5': ['Tech Elec 4', 'CSC230'],
+            'Co-op 1': ['MATH100/MATH109', 'MATH110', 'PHYS110', 'CSC111', 'ENGR110', 'ENGR120', 'ENGR130'],
+            'Co-op 2': ['Co-op 1'],
+            'Co-op 3': ['Co-op 2'],
+            'Co-op 4': ['Co-op 3'],
         };
 
         electiveCheckboxes.forEach(checkbox => {
