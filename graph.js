@@ -16,7 +16,6 @@ const data = {
         { id: "ENGR110", x: -200, y: 120 },
         { id: "ENGR120", x: -200, y: 200 },
         { id: "ENGR130", x: 400, y: 0 },
-        //{ id: "CO-OP 1", x: 500, y: 0 },
 
         //2A
         { id: "ECE255", x: 840, y: 260 },
@@ -25,10 +24,6 @@ const data = {
         { id: "MATH122", x: 200, y: 300 },
         { id: "SENG265", x: 600, y: 260 },
         { id: "STAT260", x: 150, y: 380 },
-        //{ id: "Complementary Studies Elective", x: 700, y: 400 },
-
-        //Co-op
-       // { id: "ENGR002", x: 200, y: 0 },
 
         //2B Summer
         { id: "CSC225", x: 400, y: 350 },
@@ -36,10 +31,6 @@ const data = {
         { id: "ECE310", x: -350, y: 500 },
         { id: "SENG275", x: 530, y: 370 },
         { id: "SENG310", x: 650, y: 300 },
-        //{ id: "Complementary Studies Elective", x: 700, y: 500 },
-
-        //Co-op
-        //{ id: "ENGR003", x: 300, y: 0 },
 
         //3A Spring
         { id: "ECE363", x: 980, y: 340 },
@@ -48,10 +39,6 @@ const data = {
         { id: "ECE360", x: -300, y: 600 },
         { id: "SENG321", x: 600, y: 600 },
         { id: "SENG371", x: 500, y: 460 },
-        //{ id: "Natural Science Elective", x: 800, y: 600 },
-
-        //Co-op
-        //{ id: "ENGR004", x: 400, y: 0 },
 
         //3B Fall
         { id: "ECE355", x: 700, y: 600 },
@@ -66,106 +53,11 @@ const data = {
         { id: "SENG426", x: 180, y: 60 },
         { id: "SENG440", x: 300, y: 800 },
         { id: "SENG499", x: 730, y: 800 },
-        //{ id: "Technical Elective", x: 500, y: 800 },
-        //{ id: "Technical Elective", x: 600, y: 800 },
 
         //4B Spring
         { id: "ECE455", x: 200, y: 900 },
         { id: "CSC460", x: 300, y: 900 },
         { id: "SENG401", x: 400, y: 900 },
-        // { id: "Software Engineering" },
-
-        // //1A
-        // { id: "MATH100/MATH109" },
-        // { id: "MATH101" },
-        // { id: "PHYS110" },
-        // { id: "MATH110" },
-        // { id: "CSC111" },
-
-        // //1B
-
-        // { id: "CSC115/CSC116" },
-        // { id: "ENGR110" },
-        // { id: "ENGR120" },
-        // { id: "ENGR130" },
-        // { id: "CO-OP 1" },
-
-
-        // //2A
-        // { id: "ECE255" },
-        // { id: "CSC230" },
-        // { id: "ECE260" },
-        // { id: "MATH122" },
-        // { id: "SENG265" },
-        // { id: "STAT260" },
-
-        // //Co-op
-        // { id: "ENGR002" },
-
-        // //2B Summer
-        // { id: "CSC225" },
-        // { id: "ECON180" },
-        // { id: "ECE310" },
-        // { id: "SENG275" },
-        // { id: "SENG310" },
-
-
-        // //Co-op
-        // { id: "ENGR003" },
-
-        // //3A Spring
-        // { id: "ECE363" },
-        // { id: "CSC361" },
-        // { id: "CSC226"},
-        // { id: "ECE360"},
-        // { id: "SENG321"},
-        // { id: "SENG371"},
-
-
-        // //Co-op
-        // { id: "ENGR004" },
-
-        // //3B Fall
-        // { id: "ECE355"},
-        // { id: "CSC355"},
-        // { id: "CSC320"},
-        // {id: "CSC360"},
-        // {id: "CSC370"},
-        // {id: "SENG350"},
-        // {id: "SENG360"},
-
-
-        // //4A Summer
-        // {id: "SENG426"},
-        // {id: "SENG440"},
-        // {id: "SENG499"},
-
-
-        // //4B Spring
-        // {id: "ECE455"},
-        // {id: "CSC460"},
-        // {id: "SENG401"},
-        
-
-        // electives
-        // { id: "Comp Studies Elec 1" },
-        // { id: "Comp Studies Elec 2" },
-
-        // { id: "Nat Sci Elec 1"},
-        // { id: "Nat Sci Elec 2"},
-        // { id: "Nat Sci Elec 3"},
-
-        // {id: "Tech Elec 1"},
-        // {id: "Tech Elec 2"},
-        // {id: "Tech Elec 3"},
-        // {id: "Tech Elec 4"},
-        // {id: "Tech Elec 5"},
-
-
-
-
-
-
     ],
 
     links: [
@@ -253,10 +145,6 @@ const data = {
         { source: "ECE355", target: "CSC460" },
         { source: "CSC360", target: "CSC460" },
         { source: "Software Engineering", target: "SENG401" },
-
-
-
-        //COOP
     ]
 };
 
